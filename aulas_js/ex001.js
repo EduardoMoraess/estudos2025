@@ -1,7 +1,7 @@
-console.log('ola mundo')
+const Btn = document.querySelectorAll('button');
 
-if(bosta >= 12){
-    console.log('nada')
-}else{
-    alert('nadas')
-}
+Btn.addEventListener('click', ()=>{
+    Btn.forEach(Button=>{
+        alert(`Voce apertou no btn ${Button.innerHTML}`);
+    })
+})
